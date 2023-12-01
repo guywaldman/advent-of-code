@@ -10,7 +10,7 @@ public class Day01Tests
     {
         const string ExpectedSolution = "142";
 
-        var testInput = await Input.ReadInputAsync(day: 1, part: 1, test: true);
+        var testInput = await InputUtils.ReadInputAsync(day: 1, part: 1, test: true);
 
         var solution = new Day01.Solution();
         var actualSolution = await solution.SolvePart1Async(testInput);
@@ -23,7 +23,7 @@ public class Day01Tests
     {
         const string ExpectedSolution = "54239";
 
-        var testInput = await Input.ReadInputAsync(day: 1, part: 1, test: false);
+        var testInput = await InputUtils.ReadInputAsync(day: 1, part: 1, test: false);
 
         var solution = new Day01.Solution();
         var actualSolution = await solution.SolvePart1Async(testInput);
@@ -36,7 +36,7 @@ public class Day01Tests
     {
         const string ExpectedSolution = "281";
 
-        var testInput = await Input.ReadInputAsync(day: 1, part: 2, test: true);
+        var testInput = await InputUtils.ReadInputAsync(day: 1, part: 2, test: true);
 
         var solution = new Day01.Solution();
         var actualSolution = await solution.SolvePart2Async(testInput);
@@ -49,7 +49,7 @@ public class Day01Tests
     {
         const string ExpectedSolution = "55343";
 
-        var testInput = await Input.ReadInputAsync(day: 1, part: 2, test: false);
+        var testInput = await InputUtils.ReadInputAsync(day: 1, part: 2, test: false);
 
         var solution = new Day01.Solution();
         var actualSolution = await solution.SolvePart2Async(testInput);

@@ -31,7 +31,7 @@ rootCommand.AddOption(inputOption);
 rootCommand.SetHandler(async (int day, int part, string? input) =>
 {
     var dayIdentifier = day.ToString("00");
-    var actualInput = input ?? Input.GetInputPath(day, part);
+    var actualInput = input ?? InputUtils.GetInputPath(day, part);
     Console.WriteLine($"Running solution for day {dayIdentifier}, part {part} with input: {actualInput}");
 
     if (!File.Exists(actualInput))
@@ -51,7 +51,7 @@ rootCommand.SetHandler(async (int day, int part, string? input) =>
         throw new Exception($"Solution for day {dayIdentifier} does not implement IDaySolution");
     }
 
-    var inputText = await Input.ReadInputAsync(day, part);
+    var inputText = await InputUtils.ReadInputAsync(day, part);
 
     Func<string, Task<string>> solveFn = part switch
     {

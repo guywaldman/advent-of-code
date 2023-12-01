@@ -1,6 +1,6 @@
 ﻿namespace AdventOfCode.Common;
 
-public class Input
+public class InputUtils
 {
     public static string GetInputPath(int day, int part, bool test = false)
     {
