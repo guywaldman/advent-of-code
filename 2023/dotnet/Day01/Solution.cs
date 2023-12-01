@@ -42,11 +42,7 @@ public class Solution : IDaySolution
     {
         for (var i = 0; i < line.Length; i++)
         {
-            var substr = line[i..];
-            if (IsValidDigit(substr, acceptTextForm) is { } digit)
-            {
-                return digit;
-            }
+            if (IsValidDigit(line[i..], acceptTextForm) is { } digit) return digit;
         }
         
         return null;
@@ -56,11 +52,7 @@ public class Solution : IDaySolution
     {
         for (var i = line.Length - 1; i >= 0; i--)
         {
-            var substr = line[i..];
-            if (IsValidDigit(substr, acceptTextForm) is { } digit)
-            {
-                return digit;
-            }
+            if (IsValidDigit(line[i..], acceptTextForm) is { } digit) return digit;
         }
 
         return null;
