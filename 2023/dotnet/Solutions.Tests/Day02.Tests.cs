@@ -92,7 +92,7 @@ public class Day02Tests_Part2
         Assert.Equal(expected: ExpectedSolution, actual: actualSolution);
     }
 
-    [Fact(Skip = "")]
+    [Fact]
     public async Task RealInput()
     {
         const string ExpectedSolution = "83707";
