@@ -28,16 +28,4 @@
 		</Content>
 	</ItemGroup>
 
-	<ItemGroup>
-	  <None Remove="inputs\Day02_Part2.Test.txt" />
-	  <None Remove="inputs\Day02_Part2.txt" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <Content Include="Inputs\Day01_Part1.Test.txt" />
-	  <Content Include="Inputs\Day01_Part1.txt" />
-	  <Content Include="Inputs\Day01_Part2.Test.txt" />
-	  <Content Include="Inputs\Day01_Part2.txt" />
-	</ItemGroup>
-
 </Project>
