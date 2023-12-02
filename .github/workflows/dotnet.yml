@@ -16,7 +16,7 @@ defaults:
 
 jobs:
   build:
-
+    name: "[.NET] CI"
     runs-on: ubuntu-latest
 
     steps:
