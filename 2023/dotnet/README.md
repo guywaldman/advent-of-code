@@ -1,5 +1,7 @@
 # Advent of Code 2023 (.NET)
 
+[![.NET](https://github.com/guywaldman/advent-of-code/actions/workflows/dotnet.yml/badge.svg)](https://github.com/guywaldman/advent-of-code/actions/workflows/dotnet.yml)
+
 ## Prerequisites
 
 - .NET 8 SDK
