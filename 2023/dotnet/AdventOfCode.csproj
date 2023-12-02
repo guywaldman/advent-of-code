@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.TestPlatform.TestHost" Version="17.8.0" />
+    <PackageReference Include="Pidgin" Version="3.2.2" />
     <PackageReference Include="System.CommandLine" Version="2.0.0-beta4.22272.1" />
     <PackageReference Include="xunit" Version="2.6.2" />
     <PackageReference Include="xunit.runner.console" Version="2.6.2">
@@ -25,13 +26,6 @@
 		<Content Include="Inputs\*.txt">
 			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
 		</Content>
-	</ItemGroup>
-
-	<ItemGroup>
-	  <Content Include="Inputs\Day01_Part1.Test.txt" />
-	  <Content Include="Inputs\Day01_Part1.txt" />
-	  <Content Include="Inputs\Day01_Part2.Test.txt" />
-	  <Content Include="Inputs\Day01_Part2.txt" />
 	</ItemGroup>
 
 </Project>
