@@ -41,7 +41,25 @@ public class Solution: IDaySolution
 
     public Task<string> SolvePart2Async(string input)
     {
-        throw new NotImplementedException();
+        var possibleGameIdsSum = input
+            .Split(Environment.NewLine)
+            .Select(line => ParseGame(line))
+            .Select(game => GetMinimumCubesForGame(game))
+            .Select(mins => mins.Select(mins => mins.MinValue).Aggregate((acc, num) => acc * num))
+            .Sum();
+
+        return Task.FromResult(possibleGameIdsSum.ToString());
+    }
+
+    public static IEnumerable<(CubeColor Color, int MinValue)> GetMinimumCubesForGame(Game game)
+    {
+        foreach (var color in System.Enum.GetValues<CubeColor>())
+        {
+            var minValue = game.Rounds
+                .Select(round => round.TryGetValue(color, out var red) ? red : 0)
+                .Max();
+            yield return (color, minValue);
+        }
     }
 
     public static Game ParseGame(string line)

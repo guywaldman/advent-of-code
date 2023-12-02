@@ -76,3 +76,32 @@ public class Day02Tests_Part1
         };
     }
 }
+
+public class Day02Tests_Part2
+{
+    [Fact]
+    public async Task TestInput()
+    {
+        const string ExpectedSolution = "2286";
+
+        var testInput = await InputUtils.ReadInputAsync(day: 2, part: 2, test: true);
+
+        var solution = new Solution();
+        var actualSolution = await solution.SolvePart2Async(testInput);
+
+        Assert.Equal(expected: ExpectedSolution, actual: actualSolution);
+    }
+
+    [Fact(Skip = "")]
+    public async Task RealInput()
+    {
+        const string ExpectedSolution = "83707";
+
+        var testInput = await InputUtils.ReadInputAsync(day: 2, part: 2, test: false);
+
+        var solution = new Solution();
+        var actualSolution = await solution.SolvePart2Async(testInput);
+
+        Assert.Equal(expected: ExpectedSolution, actual: actualSolution);
+    }
+}
