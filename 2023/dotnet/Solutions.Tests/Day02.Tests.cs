@@ -4,10 +4,10 @@ using Xunit;
 
 namespace AdventOfCode.Solutions.Tests;
 
-public class Day02Tests
+public class Day02Tests_Part1
 {
     [Fact]
-    public async Task Part1_TestInput()
+    public async Task TestInput()
     {
         const string ExpectedSolution = "8";
 
@@ -20,7 +20,7 @@ public class Day02Tests
     }
 
     [Fact]
-    public async Task Part1_RealInput()
+    public async Task RealInput()
     {
         const string ExpectedSolution = "2685";
 

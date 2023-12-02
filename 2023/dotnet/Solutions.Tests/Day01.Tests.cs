@@ -4,10 +4,10 @@ using Xunit;
 
 namespace AdventOfCode.Solutions.Tests;
 
-public class Day01Tests
+public class Day01Tests_Part1
 {
     [Fact]
-    public async Task Part1_TestInput()
+    public async Task TestInput()
     {
         const string ExpectedSolution = "142";
 
@@ -20,7 +20,7 @@ public class Day01Tests
     }
 
     [Fact]
-    public async Task Part1_RealInput()
+    public async Task RealInput()
     {
         const string ExpectedSolution = "54239";
 
@@ -31,9 +31,12 @@ public class Day01Tests
 
         Assert.Equal(expected: ExpectedSolution, actual: actualSolution);
     }
+}
 
+public class Day01Tests_Part2
+{
     [Fact]
-    public async Task Part2_TestInput()
+    public async Task TestInput()
     {
         const string ExpectedSolution = "281";
 
@@ -46,7 +49,7 @@ public class Day01Tests
     }
 
     [Fact]
-    public async Task Part2_RealInput()
+    public async Task RealInput()
     {
         const string ExpectedSolution = "55343";
 
