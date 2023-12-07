@@ -32,7 +32,7 @@ jobs:
       - uses: actions-rs/cargo@v1
         with:
           command: test
-          args: --manifest-path=2023/rust/Cargo.toml
+          args: --manifest-path=2023/rust/Cargo.toml --all --no-fail-fast
       - uses: actions-rs/cargo@v1
         with:
           command: fmt
