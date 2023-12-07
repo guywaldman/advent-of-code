@@ -1,7 +1,7 @@
 [workspace]
 resolver = "2"
 
-members = ["common", "day-xx-template"]
+members = ["day-07"]
 
 [workspace.dependencies]
 itertools = "0.12.0"

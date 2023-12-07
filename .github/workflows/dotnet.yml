@@ -15,7 +15,7 @@ defaults:
     working-directory: ./2023/dotnet
 
 jobs:
-  build:
+  dotnet_ci:
     name: "[.NET] CI"
     runs-on: ubuntu-latest
 
