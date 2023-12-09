@@ -1,4 +1,4 @@
-use day07::{solve_part_1, solve_part_2};
+use day03::{solve_part_1, solve_part_2};
 
 fn main() {
     let args = std::env::args().collect::<Vec<String>>();
@@ -18,13 +18,14 @@ fn main() {
     println!("{}", solution);
 }
 
+#[allow(dead_code)]
 #[cfg(test)]
-mod day07_tests {
+mod day03_tests {
     use super::*;
-    const PART1_TEST_SOLUTION: &str = "6440";
-    const PART1_PUZZLE_SOLUTION: &str = "241344943";
-    const PART2_TEST_SOLUTION: &str = "5905";
-    const PART2_PUZZLE_SOLUTION: &str = "243101568";
+    const PART1_TEST_SOLUTION: &str = "4361";
+    const PART1_PUZZLE_SOLUTION: &str = "557705";
+    const PART2_TEST_SOLUTION: &str = "467835";
+    const PART2_PUZZLE_SOLUTION: &str = "84266818";
 
     #[test]
     fn part_1_test_input() {
