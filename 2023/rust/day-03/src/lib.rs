@@ -176,7 +176,6 @@ pub fn solve_part_2(input: &str) -> Result<String, Box<dyn Error>> {
         }
     }
 
-
     Ok(sum.to_string())
 }
 

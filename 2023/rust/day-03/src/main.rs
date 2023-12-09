@@ -48,5 +48,6 @@ mod day03_tests {
     #[test]
     fn part_2_puzzle_input() {
         let puzzle_input = include_str!("../inputs/part2_puzzle.txt");
-        assert_eq!(solve_part_2(puzzle_input).unwrap(), PART2_PUZZLE_SOLUTION); }
+        assert_eq!(solve_part_2(puzzle_input).unwrap(), PART2_PUZZLE_SOLUTION);
+    }
 }
