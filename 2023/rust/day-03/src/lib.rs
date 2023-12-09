@@ -1,5 +1,3 @@
-#![feature(slice_group_by)]
-
 use itertools::iproduct;
 use std::error::Error;
 
