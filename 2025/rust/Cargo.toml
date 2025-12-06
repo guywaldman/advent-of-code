@@ -1,6 +1,6 @@
 [workspace]
 resolver = "3"
-members = ["day_04"]
+members = ["day_*"]
 
 [workspace.dependencies]
 aoc_common = { path = "../../common/rust" }

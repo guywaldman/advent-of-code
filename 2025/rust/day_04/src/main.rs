@@ -93,4 +93,11 @@ mod tests {
         let expected = "43";
         assert_eq!(solve_part_2(input), expected);
     }
+
+    #[test]
+    fn test_solve_part_2_real() {
+        let input = include_str!("../inputs/input.txt");
+        let expected = "8765";
+        assert_eq!(solve_part_2(input), expected);
+    }
 }
