@@ -1,0 +1,10 @@
+[workspace]
+resolver = "3"
+members = ["day_04"]
+
+[workspace.dependencies]
+aoc_common = { path = "../../common/rust" }
+indoc = "2.0.7"
+anyhow = "1.0.100"
+itertools = "0.14.0"
+
